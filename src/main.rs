@@ -1,4 +1,5 @@
 mod day01;
+mod day02;
 
 fn main() {
     let args: Vec<String> = std::env::args().collect();
@@ -6,6 +7,7 @@ fn main() {
 
     match day.as_str() {
         "01" => day01::run(),
+        "02" => day02::run(),
         _ => unreachable!(),
     }
 }
