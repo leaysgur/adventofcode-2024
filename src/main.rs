@@ -4,6 +4,7 @@ mod day03;
 mod day04;
 mod day05;
 mod day06;
+mod day07;
 mod utils;
 
 fn main() {
@@ -17,6 +18,7 @@ fn main() {
         "04" => day04::run(),
         "05" => day05::run(),
         "06" => day06::run(),
+        "07" => day07::run(),
         _ => unreachable!(),
     }
 }
