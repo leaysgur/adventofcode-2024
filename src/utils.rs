@@ -1,3 +1,4 @@
+/// Returns: (cells, (cols, rows))
 pub fn to_cells(inputs: &str) -> (Vec<Vec<char>>, (usize, usize)) {
     let cells = inputs
         .lines()
