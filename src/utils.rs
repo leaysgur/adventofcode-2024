@@ -10,6 +10,16 @@ pub fn to_cells(inputs: &str) -> (Vec<Vec<char>>, (usize, usize)) {
     (cells, (cols, rows))
 }
 
+pub fn debug_cells(cells: &Vec<Vec<char>>) {
+    for row in cells {
+        for c in row {
+            print!("{c}");
+        }
+        println!();
+    }
+    println!();
+}
+
 pub fn dump_cells(cells: &Vec<Vec<char>>) {
     // Wait and wipe!
     std::thread::sleep(std::time::Duration::from_millis(16));
